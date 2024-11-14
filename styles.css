@@ -1,0 +1,1072 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	outline: none;
+    list-style: none;
+    text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: 'satoshiregular';
+    src: url('fonts/satoshi-regular.woff2') format('woff2'),
+         url('fonts/satoshi-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'satoshiitalic';
+    src: url('fonts/satoshi-italic-webfont.woff') format('woff2'),
+         url('fonts/satoshi-italic-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'satoshilight';
+    src: url('fonts/satoshi-light-webfont.woff') format('woff2'),
+         url('fonts/satoshi-light-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
+@font-face {
+    font-family: 'integral_cfbold';
+    src: url('fonts/fontspring-demo-integralcf-bold-webfont.woff') format('woff2'),
+         url('fonts/fontspring-demo-integralcf-bold-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'integral_cfbold_oblique';
+    src: url('fonts/fontspring-demo-integralcf-boldoblique-webfont.woff') format('woff2'),
+         url('fonts/fontspring-demo-integralcf-boldoblique-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* offer section */
+#offer{
+    width: 100vw;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+}
+#offer div.text{
+
+    width: 90%;
+}
+#offer div.text p{
+    font-family: 'satoshilight';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    white-space: nowrap;
+}
+#offer div.text a{
+    font-family: 'satoshilight';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    text-align: left;
+    color: #fff;
+    text-decoration: underline;
+
+}
+#offer div.icon{
+    text-align: center;
+}
+#offer div.icon svg{
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+#offer div.icon:hover svg{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/* header section */
+header{
+    width: 100vw;
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+header div.left {
+    display: flex;
+}
+header div.menu-icon{
+    width: 24px;
+    height: 24px;
+    padding: 4.88px 2.63px;
+    margin-right: 15px;
+    display: none;
+}
+header .logo{
+    height: 22px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'integral_cfbold';
+}
+header ul.navlist{
+    display: flex;
+    width: 30%;
+}
+header ul.navlist li{
+    width: 5vw;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+header ul.navlist a{
+    display: inline-block;
+    font-family: 'satoshilight';
+    color: #000;
+    font-size: 16px;
+}
+header ul.navlist li:first-child{
+    margin-right: 0;
+}
+header div.right{
+    display: flex;
+
+}
+header div.right a{
+    display: inline-block;
+    margin: 0 1vw;
+
+}
+header div.right a:first-child{
+    display: none;
+}
+header div.search{
+    width: 47%;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 62px;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    -ms-border-radius: 62px;
+    -o-border-radius: 62px;
+    background-color: #F0F0F0;
+}
+header div.search input{
+    width: 70%;
+    position: relative;
+    bottom: 10px;
+    left: 35px;
+    font-size: 16px;
+    font-family: 'satoshilight';
+    color: #000 40%;
+    background: transparent;
+    flex: 1;
+}
+
+/* spotlight section */
+#spotlight{
+    background-color: #F2F0F1;
+    width: 100vw;
+}
+#spotlight section.wrapper{
+    width: 90%;
+    height: 663px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+#spotlight section.wrapper div.text{
+    width: 50%;
+    display: inline-block;
+    white-space: nowrap;
+}
+#spotlight section.wrapper div.text h1{
+    font-size: 4.4vw;
+    font-weight: 700;
+    line-height: 4.4vw;
+    font-family: 'integral_cfbold';
+}
+#spotlight section.wrapper div.text p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #00000099;
+    line-height: 22px;
+    font-family: 'satoshilight';
+}
+#spotlight section.wrapper div.text p br.none{
+    display: none;
+}
+#spotlight section.wrapper div.text a.button{
+    display: inline-block;
+    padding: 16px 54px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    font-family: 'satoshiitalic';
+    border-radius: 62px;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    -ms-border-radius: 62px;
+    -o-border-radius: 62px;
+    margin-top: 12px;
+}
+#spotlight section.wrapper div.img{
+    width: 50%;
+}
+#spotlight section.wrapper div.img img{
+    width: 100%;
+    height: 666px;
+}
+
+#spotlight section.wrapper div.text ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+#spotlight section.wrapper div.text ul li{
+    width: 10%;
+    border-left: #0000001A 1px solid;
+    margin-left: 21%;
+    padding: 0 5%;
+}
+#spotlight section.wrapper div.text ul li:first-child{
+    margin-left: 0;
+    border-left: none;
+}
+#spotlight section.wrapper div.text ul li h3{
+    font-family: 'satoshilight';
+    font-weight: 700;
+    font-size: 2.77vw;
+    line-height: 54px;
+}
+#spotlight section.wrapper div.text ul li p{
+    font-family: 'satoshilight';
+    width: 141px;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 22px;
+    color: #00000099;
+}
+
+/* brands section */
+#brands{
+    width: 100%;
+    height: 122px;
+    padding: 30px 5px;
+    background-color: #000;
+}
+#brands section.main-brands{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#brands section.main-brands img{
+    width: 100%;
+    height: auto;
+}
+/* main section */
+#main{
+    width: 100vw;
+}
+#main div.top{
+    text-align: center;
+    margin: 40px 0;
+}
+#main div.top h2{
+    font-family: 'integral_cfbold';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+}
+#main  div.bottom{
+    width: 80vw;
+    align-items: center;
+}
+#main  div.bottom ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#main  div.bottom ul li{
+    margin-left: 2%;
+}
+#main div.bottom ul img{
+    width: 10;
+}
+#main div.bottom ul h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'satoshilight';
+    margin-bottom: 5px;
+    line-height: 27px;
+    display: inline-block;
+    white-space: nowrap;
+}
+#main div.bottom ul a{
+    color: #000000;
+}
+#main div.bottom ul p{
+    font-family: 'satoshilight';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+}
+#main div.bottom ul p span.close{
+    text-decoration: line-through;
+    color: #787878;
+}
+#main div.bottom ul span.offer{
+    width: 58px;
+    height: 28px;
+    font-size: 0.9vw;
+    padding: 16px 1vw ;
+    margin-left: 12px;
+    border-radius: 62px;
+    background-color: #FF33331A;
+    color: #ff3333;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    -ms-border-radius: 62px;
+    -o-border-radius: 62px;
+}
+#main div.bottom div.button{
+    display: flex;
+    justify-content: center;
+    padding: 16px 54px;
+}
+#main div.bottom a.button{
+    height: 52px;
+    font-family: 'satoshiregular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    display: inline-block;
+    margin-left: 40vw;
+    padding: 16px 54px;
+    color: #000000;
+    text-align: center;
+    border-radius: 62px;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    -ms-border-radius: 62px;
+    -o-border-radius: 62px;
+    margin-top: 12px;
+    border: 1px solid #0000001A;
+}
+#main section.arrivals div.bottom{
+    width: 80%;
+    margin:0 5% ;
+    border-bottom: 1px solid #0000001A;
+    padding-bottom: 45px;
+}
+#main section.selling div.bottom{
+    width: 80%;
+    margin:0 5% ;
+    padding-bottom: 45px
+}
+
+/* dress section */
+#dress {
+    width: 90%;
+    height: 866px;
+    border-radius: 40px;
+    margin-top: 80px;
+    margin: 0 5%;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    background-color: #f0f0f0;
+}
+#dress div.top h3{
+    padding-top: 70px;
+    font-family: 'integral_cfbold';
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    font-weight: 700;
+}
+#dress div.top h3 br{
+    display: none;
+}
+#dress div.bottom{
+    margin-top: 64px;
+    text-align: center;
+}
+#dress div.bottom img{
+    columns: 2;
+    margin: 10px;
+    display: inline-block;
+}
+#dress div.bottom img:first-child{
+    width: 33%;
+    height: 289px;
+}
+#dress div.bottom img:nth-child(2){
+    width: 56%;
+    height: 289px;
+
+}
+#dress div.bottom img:nth-child(3){
+    width: 56%;
+    height: 289px;
+
+}
+#dress div.bottom img:last-child{
+    width: 33%;
+    height: 289px;
+
+}
+/* customers section */
+#customers{
+    margin-top: 100px;
+    width: 100vw;
+}
+#customers div.top{
+    width: 100%;
+    display: flex;
+}
+#customers div.top div.heading{
+    width: 50%;
+    margin: 0 5%;
+}
+#customers div.top h4{
+    font-family: 'integral_cfbold';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+}
+#customers div.top div.icon{
+    width: 50%;
+    align-items: center;
+}
+#customers div.top div.icon svg{
+    margin-left: 50%;
+    margin-top: 18px;
+}
+#customers div.top div.icon svg:nth-child(2){
+    margin: 0;
+}
+#customers div.bottom {
+    margin: 0 5%;
+    width: 100%;
+}
+#customers div.bottom ul{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 40px ;
+}
+#customers div.bottom ul li{
+    width: 400px;
+    height: 239.58px;
+    padding: 28px 32px ;
+    border-radius: 20px;
+    border: 1px solid #9e10101a;
+    margin-left: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#customers div.bottom ul li div.name{
+    display: flex;
+    
+}
+#customers div.bottom ul li div.name h4{
+    font-family: 'satoshilight';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    margin: 10px ;
+}
+#customers div.bottom ul li div.name svg{
+    position: relative;
+    top: 8px;
+}
+#customers div.bottom ul li p{
+    font-family: 'satoshilight';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+
+/* newsletter section */
+#newsletter{
+    width: 90%;
+    height: 180px;
+    display: flex;
+    background-color: #000000;
+    position: absolute;
+    margin: 0 5%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#newsletter div.left{
+    width: 50%;
+    margin: 0;
+    padding: 4%;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+#newsletter div.left h2{
+    color: #fff;
+    font-family: 'integral_cfbold';
+    font-weight: 700;
+    font-size: 2.77vw;
+    line-height: 45px;
+    
+}
+#newsletter div.left h2 br.none{
+    display: none;
+}
+#newsletter div.right{
+    width: 40%;
+    margin-left: 10%;
+    
+}
+#newsletter div.right ul{
+    padding: 5%;
+}
+#newsletter div.right ul li{
+    width: 70%;
+    height: 48px;
+    padding: 12px 16px ;
+    margin-top: 12px;
+    border-radius: 62px;
+    text-align: center;
+    align-items: center;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    -ms-border-radius: 62px;
+    -o-border-radius: 62px;
+    background-color: #F0F0F0;
+}
+#newsletter div.right ul li input{
+    font-size: 1.1vw;
+}
+#newsletter div.right ul li svg{
+    position: relative;
+    right: 4%;
+}
+/* footer section */
+footer{
+    width: 100vw;
+    height: 499px;
+    margin-top: 90px;
+    background-color: #F0F0F0;
+}
+footer div.top{
+    width: 90%;
+    display: flex;
+    margin: 0 5%;
+    border-bottom: 1px solid #0000001A;
+}
+footer div.top div.left{
+    width: 25%;
+    margin-top: 150px;
+    margin-right: 5%;
+    
+}
+footer div.top div.left h1 a{
+    font-size: 2.3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'integral_cfbold';
+    line-height: 40.15px;
+}
+footer div.top div.left p{
+    font-family: 'satoshilight';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding: 15px 0;
+    color: #00000099;
+}
+footer div.top div.left ul {
+    padding: 10% 0;
+    display: flex;
+}
+footer div.top div.left ul li{
+    margin-left: 20px;
+}
+footer div.top div.left ul li:first-child{
+    margin-left: 0;
+}
+footer div.top div.right{
+    width: 75%;
+    margin-top: 150px ;
+    display: flex;
+}
+footer div.top div.right ul{
+    width: 25%;
+}
+footer div.top div.right ul li{
+    margin-bottom: 15px;
+}
+footer div.top div.right ul li h3{
+    font-family: 'satoshilight';
+    font-size: 1.7vw;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 30px;
+}
+footer div.top div.right ul li a{
+    font-family: 'satoshilight';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #00000099;
+}
+footer div.bottom span{
+    display: inline-block;
+    white-space: nowrap;
+    font-family: 'satoshilight';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: right;
+    margin-left: 10%;
+    position: relative;
+    top: 30px;
+    color: #00000099;
+}
+footer div.bottom {
+    display: flex;
+    width: 100vw;
+}
+footer div.bottom div.left{
+    width: 50vw;
+}
+footer div.bottom div.right {
+    width: 50vw;
+}
+footer div.bottom div.right ul{
+    display: flex;
+    float: right;
+    margin: 20px 5vw;
+}
+
+/* Desktop Screens */
+@media (max-width: 1200px) {
+    html,body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    header div.logo{
+        font-size: 25px;
+    }
+    header ul.navlist a{
+        font-size: 12px;
+    }
+    header div.search input{
+        font-size: 14px;
+    }
+    #customers div.top h4 {
+        font-size: 30px;
+    }
+    footer div.top div.left p br{
+        display: none;
+    }
+}
+@media (max-width: 786px) {
+    header div.menu-icon{
+        display: inline;
+    }
+    header ul.navlist {
+        display: none;
+    }
+    header div.search{
+        margin-left: 2%;
+    }
+    header div.right {
+        margin-left: 6%;
+    }
+    #spotlight section.wrapper{
+        height: 507px;
+        display: inline;
+        margin: 0;
+    }
+    #spotlight section.wrapper div.text{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10%;
+    }
+    #spotlight section.wrapper div.text h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    #spotlight section.wrapper div.text p{
+        font-size: 14px;
+    }
+    #spotlight section.wrapper div.text a.button{
+        width: 230px;
+    }
+    #spotlight section.wrapper div.text ul{
+        margin-left: 15%;
+    }
+
+    #spotlight section.wrapper div.text ul li h3{
+        font-size: 40px;
+    }
+    #spotlight section.wrapper div.text ul li p{
+        font-size: 16px;
+    }
+    #spotlight section.wrapper div.img{
+        width: 100%;
+        height: 510px;
+        text-align: center;
+    }
+    #spotlight section.wrapper div.img img{
+        width: 70%;
+        height: 510px;
+        align-items: center;
+
+    }
+    #spotlight section.wrapper div.text ul li{
+        border-left: none;
+        width: 20%;
+        line-height: 18px;
+    }
+    #spotlight section.wrapper div.text ul li:nth-child(2){
+        border-left: 1px solid #0000001A;
+    }
+    #spotlight section.wrapper div.text ul li:nth-child(2) h3{
+        margin-left: 20px;
+    }
+    #spotlight section.wrapper div.text ul li:nth-child(2) p{
+        margin-left: 20px;
+    }
+
+    #customers div.top h4{
+        font-size: 20px;
+    }
+    #customers div.bottom ul li:last-child{
+        display: none;
+    }
+    #customers div.bottom ul li{
+        width: 320px;
+    }
+    #newsletter div.right ul li svg{
+        height: 20px;
+    }
+    footer div.top div.right ul li a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 390px) {
+    #offer div.icon{
+        display: none;
+    }
+    #offer div.text p{
+        font-size: 12px;
+    }
+    #offer div.text p a{
+        font-size: 12px;
+    }
+    header .logo{
+        font-size: 25.2px;
+    }
+    header div.search{
+        display: none;
+    }
+    header div.right{
+        margin-left: 50px;
+    }
+    header div.right a{
+        float: right;
+    }
+    header div.right a:first-child{
+        display: inline;
+    }
+    #spotlight{
+        height: 970px;
+    }
+    #spotlight section.wrapper{
+        margin: 0 5%;
+    }
+    #spotlight section.wrapper div.text {
+        text-align: left;
+    }
+    #spotlight section.wrapper div.text h1{
+        font-size: 36px;
+        line-height: 34px;
+    }
+    #spotlight section.wrapper div.text p br{
+        display: none;
+    }
+    #spotlight section.wrapper div.text p br.none{
+        display: inline;
+    }
+    #spotlight section.wrapper div.text p{
+        font-size: 14px;
+    }
+    #spotlight section.wrapper div.text a.button{
+        width: 358px;
+    }
+    #spotlight section.wrapper div.text ul {
+        margin-left: 0;
+    }
+    #spotlight section.wrapper div.text ul li{
+        height: 50PX;
+    }
+    #spotlight section.wrapper div.text ul li h3{
+        font-size: 24px;
+    }
+    #spotlight section.wrapper div.text ul li p{
+        font-size: 12px;
+    }
+    #spotlight section.wrapper div.text ul li:last-child{
+        margin-left: 100PX;
+        position: relative;
+        top: 14px;
+    }
+    #spotlight section.wrapper div.img img {
+        width: 430PX;
+        height: 528px;
+        position: relative;
+        top: 45px;
+    }
+    #brands{
+        height: 120px;
+    }
+    #brands section.main-brands img:nth-child(1){
+        width: 116.74px;
+    }
+    #brands section.main-brands img:nth-child(2){
+        width: 63.81px;
+    }
+    #brands section.main-brands img:nth-child(3){
+        width: 109.39px;
+    }
+    #brands section.main-brands img:nth-child(4){
+        width: 127px;
+    }
+    #brands section.main-brands img:nth-child(5){
+        width: 134.84px;
+    }
+    #main div.top h2{
+        font-size: 32px;
+    }
+    #main div.bottom ul li:nth-child(3){
+        display: none;
+    }
+    #main div.bottom ul li:nth-child(4){
+        display: none;
+    }
+    #main div.bottom ul img{
+        width: 198px;
+        height: 200.01px;
+    }
+    #main div.bottom ul li h3{
+        font-size: 14px;
+    }
+    #main div.bottom ul li svg{
+        width: 127px;
+    }
+    #main div.bottom ul li p{
+        font-size: 20px;
+    }
+    #main div.bottom a.button {
+        width: 350px;
+        margin-left: 0;
+        
+    }
+    #main div.bottom ul span.offer{
+        width: 42px;
+        height: 20px;
+        font-size: 10px;
+    }
+    #dress {
+        height: 1090px;
+    }
+    #dress div.bottom img:first-child{
+        width: 90%;
+        height: 190px;
+    }
+    #dress div.bottom img:nth-child(2){
+        width: 90%;
+        height: 190px;
+    
+    }
+    #dress div.bottom img:nth-child(3){
+        width: 90%;
+        height: 190px;
+    
+    }
+    #dress div.bottom img:last-child{
+        width: 90%;
+        height: 190px;
+    }
+    #dress div.top h3{
+        width: 330px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    #dress div.bottom {
+        margin-top: 10px;
+    }
+    #customers div.top{
+        width: 380px;
+    }
+    #customers div.top h4{
+        width: 286px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    #customers div.bottom ul li:nth-child(2){
+        display: none;
+    }
+    #newsletter{
+        height: 293px;
+        display: inline-block;
+    }
+    #newsletter div.left{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #newsletter div.right{
+        width: 100%;
+    }
+    #newsletter div.left h2{
+        font-size: 32px;
+        line-height: 35px;
+        width: 297px;
+        float: left;
+    }
+    #newsletter div.left h2 br{
+        display: none;
+    }
+    #newsletter div.left h2 br.none{
+        display: inline;
+    }
+    #newsletter div.right{
+        width: 358px;
+        margin: 0 5%;
+    }
+    #newsletter div.right ul li {
+        width: 311px;
+    }
+    #newsletter div.right ul {
+        padding: 0;
+    }
+    #newsletter div.right ul li input {
+        font-size: 12px;
+    }
+    footer{
+        height: 1000px;
+    }
+    footer div.top{
+        display: inline-block;
+        width: 330px;
+    }
+    footer div.top div.left {
+        width: 100%;
+        margin: 0 5% ;
+        margin-top: 220px;
+    }
+    footer div.top div.left ul{
+        padding: 0;
+    }
+    footer div.top div.right  {
+        width: 390px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    footer div.top div.right{
+        margin: 0;
+        margin-top: 5%;
+    }
+    footer div.top div.right ul {
+        width: 157px;
+        margin-left: 24px;
+    }
+    footer div.top div.right ul:first-child{
+        margin-left: 5%;
+    }
+    footer div.top div.left h1 a{
+        font-size: 28.85px;
+    }
+    footer div.top div.left p{
+        font-size: 14px;
+        width: 358px;
+    }
+    footer div.top div.right ul li h3{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    footer div.bottom{
+        display: inline-block;
+    }
+    footer div.bottom div.left{
+        width: 390px;
+        
+    }
+    footer div.bottom div.right{
+        width: 358px;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 0;
+    }
+    footer div.bottom span{
+        margin-left: 12%;
+    }
+    footer div.bottom div.right ul{
+        margin: 20px 11vw;
+    }
+}
