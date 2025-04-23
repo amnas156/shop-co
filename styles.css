@@ -122,7 +122,7 @@ html,body{
 /* header section */
 header{
     width: 100vw;
-    padding: 10px 7%;
+    padding: 20px 7%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -176,9 +176,11 @@ header div.right a:first-child{
     display: none;
 }
 header div.search{
+    display: flex;
+    gap: 10px;
     width: 47%;
     height: 48px;
-    padding: 12px 16px;
+    align-items: center;
     border-radius: 62px;
     -webkit-border-radius: 62px;
     -moz-border-radius: 62px;
@@ -186,16 +188,16 @@ header div.search{
     -o-border-radius: 62px;
     background-color: #F0F0F0;
 }
+header div.search img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
 header div.search input{
-    width: 70%;
-    position: relative;
-    bottom: 10px;
-    left: 35px;
     font-size: 16px;
     font-family: 'satoshilight';
     color: #000 40%;
     background: transparent;
-    flex: 1;
 }
 
 /* spotlight section */
@@ -221,6 +223,7 @@ header div.search input{
     font-weight: 700;
     line-height: 4.4vw;
     font-family: 'integral_cfbold';
+    margin-bottom: 15px;
 }
 #spotlight section.wrapper div.text p{
     font-size: 1.2vw;
@@ -228,6 +231,7 @@ header div.search input{
     color: #00000099;
     line-height: 22px;
     font-family: 'satoshilight';
+    margin-bottom: 15px;
 }
 #spotlight section.wrapper div.text p br.none{
     display: none;
@@ -257,7 +261,7 @@ header div.search input{
 #spotlight section.wrapper div.text ul {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 50px;
 }
 #spotlight section.wrapper div.text ul li{
     width: 10%;
@@ -307,7 +311,8 @@ header div.search input{
 }
 #main div.top{
     text-align: center;
-    margin: 40px 0;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 #main div.top h2{
     font-family: 'integral_cfbold';
@@ -316,17 +321,17 @@ header div.search input{
     line-height: 57.6px;
 }
 #main  div.bottom{
-    width: 80vw;
+    width: 80%;
     align-items: center;
+    margin: 0 auto;
 }
 #main  div.bottom ul{
     width: 100%;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
 }
-#main  div.bottom ul li{
-    margin-left: 2%;
-}
+
 #main div.bottom ul img{
     width: 10;
 }
@@ -388,18 +393,18 @@ header div.search input{
     -moz-border-radius: 62px;
     -ms-border-radius: 62px;
     -o-border-radius: 62px;
-    margin-top: 12px;
+    margin-top: 50px;
     border: 1px solid #0000001A;
 }
 #main section.arrivals div.bottom{
     width: 80%;
-    margin:0 5% ;
+    margin:40px auto ;
     border-bottom: 1px solid #0000001A;
     padding-bottom: 45px;
 }
 #main section.selling div.bottom{
     width: 80%;
-    margin:0 5% ;
+    margin:40px auto ;
     padding-bottom: 45px
 }
 
@@ -461,39 +466,38 @@ header div.search input{
     width: 100vw;
 }
 #customers div.top{
-    width: 100%;
-    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    position: relative;
+    align-items: center;
 }
-#customers div.top div.heading{
-    width: 50%;
-    margin: 0 5%;
-}
+
 #customers div.top h4{
     font-family: 'integral_cfbold';
     font-weight: 700;
     font-size: 48px;
     line-height: 57.6px;
+    
 }
+
 #customers div.top div.icon{
-    width: 50%;
+
     align-items: center;
+    position: absolute;
+    right: 0;
+    top: 18px;
 }
-#customers div.top div.icon svg{
-    margin-left: 50%;
-    margin-top: 18px;
-}
+
 #customers div.top div.icon svg:nth-child(2){
     margin: 0;
 }
 #customers div.bottom {
-    margin: 0 5%;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 #customers div.bottom ul{
-    width: 100%;
     display: flex;
-    margin-top: 100px;
-    padding-bottom: 40px ;
+    margin-bottom: 80px;
 }
 #customers div.bottom ul li{
     width: 400px;
@@ -536,7 +540,6 @@ header div.search input{
 #newsletter{
     width: 90%;
     height: 180px;
-    display: flex;
     background-color: #000000;
     position: absolute;
     margin: 0 5%;
@@ -546,20 +549,22 @@ header div.search input{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+#newsletter .wrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
 #newsletter div.left{
-    width: 50%;
-    margin: 0;
+    width: 60%;
     padding: 4%;
-    text-align: center;
-    display: inline-block;
-    white-space: nowrap;
+    text-align: left;
 
 }
 #newsletter div.left h2{
     color: #fff;
     font-family: 'integral_cfbold';
     font-weight: 700;
-    font-size: 2.77vw;
+    font-size: 40px;
     line-height: 45px;
     
 }
@@ -573,9 +578,12 @@ header div.search input{
 }
 #newsletter div.right ul{
     padding: 5%;
+    
 }
 #newsletter div.right ul li{
-    width: 70%;
+    display: flex;
+    gap: 15px;
+    width: 100%;
     height: 48px;
     padding: 12px 16px ;
     margin-top: 12px;
@@ -589,17 +597,15 @@ header div.search input{
     background-color: #F0F0F0;
 }
 #newsletter div.right ul li input{
+    width: 90%;
     font-size: 1.1vw;
 }
-#newsletter div.right ul li svg{
-    position: relative;
-    right: 4%;
-}
+
 /* footer section */
 footer{
     width: 100vw;
     height: 499px;
-    margin-top: 90px;
+    margin-top: 170px;
     background-color: #F0F0F0;
 }
 footer div.top{
